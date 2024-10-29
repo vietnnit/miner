@@ -30,7 +30,8 @@ chmod +x run_sixgpt.sh
 ```
 
 #### Manual Run the miner:
-Create .env
+Create .env 
+#### Without 0x
 ```
 VANA_PRIVATE_KEY=abcdefabcef
 VANA_NETWORK=moksha
