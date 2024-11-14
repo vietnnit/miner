@@ -40,7 +40,7 @@ Stop the miner:
 ```
 docker-compose down
 ```
-Check logs the miner:
+Check miner logs:
 ```
 docker-compose logs -f
 ```
@@ -48,8 +48,6 @@ docker-compose logs -f
 ### Run the miner with more advanced options
 ```
 chmod +x run_sixgpt.sh
-```
-```
 ./run_sixgpt.sh
 ```
 
