@@ -1,0 +1,44 @@
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Docker and container logs
+docker-logs/
+**/docker-logs/
+**/*.log
+logs/
+*.log
+*.out
+
+# Node and Python dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sublime-workspace
+*.sublime-project
+.vs/
+
+# Git related
+.git/
+*.lock
+
+# Backup files
+*.bak
+*.tmp
+*.swp

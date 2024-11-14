@@ -8,7 +8,12 @@ services:
     volumes:
       - ollama:/root/.ollama
     restart: unless-stopped
- 
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+        
   sixgpt3:
     image: sixgpt/miner:latest
     ports:
@@ -18,8 +23,13 @@ services:
     environment:
       - VANA_PRIVATE_KEY=${VANA_PRIVATE_KEY}
       - VANA_NETWORK=${VANA_NETWORK}
-      - OLLAMA_API_URL=http://ollama:11434/api
+      - OLLAMA_API_URL=${OLLAMA_API_URL}
     restart: no
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   ollama:
