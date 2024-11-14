@@ -16,22 +16,15 @@ In the future, we will support other tasks such as chatbot conversations, image 
 (3) Login with this wallet on sixgpt.xyz
 
 
-## Run the miner
+## Run the miner:
 Clone the repository:
 ```
 git clone https://github.com/sixgpt/miner.git
 cd miner
 ```
-```
-chmod +x run_sixgpt.sh
-```
-```
-./run_sixgpt.sh
-```
 
-#### Manual Run the miner:
+### Run the miner with CPU
 Create .env 
-#### Without 0x
 ```
 VANA_PRIVATE_KEY=abcdefabcef
 VANA_NETWORK=moksha
@@ -50,6 +43,14 @@ docker-compose down
 Check logs the miner:
 ```
 docker-compose logs -f
+```
+
+### Run the miner with more advanced options
+```
+chmod +x run_sixgpt.sh
+```
+```
+./run_sixgpt.sh
 ```
 
 ## Notes
