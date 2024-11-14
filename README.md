@@ -24,7 +24,7 @@ cd miner
 ```
 
 ### Run the miner with CPU
-Create .env 
+Create an .env file. Make sure your Vana Private key is set to your wallet private key (0x...)
 ```
 VANA_PRIVATE_KEY=abcdefabcef
 VANA_NETWORK=moksha
