@@ -618,7 +618,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
     restart: unless-stopped
     logging:
       driver: "json-file"
@@ -666,7 +666,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
     deploy:
       resources:
         reservations:
@@ -712,7 +712,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
       resources:
         reservations:
           devices:
@@ -763,7 +763,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
     restart: unless-stopped
     logging:
       driver: "json-file"
@@ -891,7 +891,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
     deploy:
       resources:
         reservations:
@@ -945,7 +945,7 @@ services:
     ports:
       - "11439:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ollama:/home/qtdl/.ollama
     restart: unless-stopped
     logging:
       driver: "json-file"
